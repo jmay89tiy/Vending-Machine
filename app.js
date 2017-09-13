@@ -14,7 +14,7 @@ app.use('/api/customers', controller.customerController);
 
 
 var mw = function (req, res, next) {
-    console.log("Middleware Running");
+    console.log("Middleware is online and operational Captain");
     next();
 }
 

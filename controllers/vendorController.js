@@ -68,6 +68,8 @@ var purchases = [
     }
   ]
 
+
+
 var cashMoney = 500;
 
 //
@@ -179,6 +181,8 @@ router.route('/items/:itemId')
     var item = items.filter((obj) => {
       return obj.id === req.body.id;
     })
+
+    
     item[0].description = req.body.description;
     item[0].cost = req.body.cost;
     item[0].quantity = req.body.quantity;
